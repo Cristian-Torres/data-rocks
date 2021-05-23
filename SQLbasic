@@ -1,0 +1,29 @@
+# SQL Tutorial
+SELECT * FROM file.name
+SELECT is a keyword used to specify which columns are to be selected
+* is used to indicate that all columns are selected
+FROM is a keyword used to indicate the source of data
+. is used to indicate the relationship between the new_schema and file_title
+; is optionally used to end a query script
+WHERE is a keyword used to include only certain rows that fulfill the criteria and exclude those that do not
+We can use the equal operator (=), greater than (>), less than (<), at least (>=), at most (<=), and not equals to (<>)
+LIKE is a keyword used to filter records that contain a series of characters
+Sort the results using the ORDER BY, ASC, and DES keywords
+GROUP BY are the keywords used to group rows that have the same values together
+Single quotation marks (‘) are used to enclose a string
+AS is a keyword used to rename the resulting column
+Use DISTINCT keyword to answer a query when you want to avoid duplicates
+You can also limit the number of rows by using the LIMIT clause
+The order of GROUP BY, ORDER BY and LIMIT is very important. If you mistakenly change the order, you will have to face errors
+The correct order is - GROUP BY -> ORDER BY -> LIMIT. Always remember this
+CASE-WHEN allows you to create new variables using infinte conditions
+
+Aggregate functions that can be used to find summary values of the selected rows:
+  SUM(col_name) to find the summation of all values in col_name
+  MIN(col_name) to find the minimum value of all values in col_name
+  MAX(col_name) to find the maximum value of all values in col_name
+  COUNT(col_name) to find the number of rows in col_name
+  AVG() is a keyword to find the average duration
+Note that you use these functions in lower case
+HAVING is a keyword used to condition only when you have aggregate functions. It is similar to WHERE clause
+
