@@ -1,0 +1,29 @@
+# Directorio de Trabajo
+
+# Obtener el directorio de trabajo actual
+getwd()
+# Cambiar el directorio de trabajo
+setwd("~/Users/CristianTorres")
+
+# Leer archivos CSV
+
+df <- read.csv("ejemplo.csv")
+# Leer archivos ubicados en un servidor
+df <- read.csv("http://dominioejemplo.com/uploads/datos_treemap.txt", sep = "\t")
+head(df) # Mostrar las 6 primeras filas (por defecto)
+# Argumentos:
+# sep: Cuál es el carácter delimitador entre los campos (columnas), por defecto sep = "," 
+# header: ¿La primera línea del archivo contiene los nombres de las columnas? TRUE (por defecto) o FALSE
+# dec: Separador decimal. Usar el punto o la coma, por defecto dec = "."
+
+# URL del archivo a leer. Carácter delimitador: tabulador
+df <- read.csv("http://datanalytics.com/uploads/datos_treemap.txt", sep = "\t")
+
+# URL del archivo a leer
+df <- read.table("https://raw.githubusercontent.com/oscarperpinan/R/master/data/aranjuez.csv", sep=",", header=TRUE)
+tail(df, 3) # Mostrar las 3 últimas filas
+
+# Leer archivos en múltiples formatos y limpiar/ordenar sus datos con la función read_delim:
+datos <- read_delim("https://archive.ics.uci.edu/ml/machine-learning-databases/00409/Daily_Demand_Forecasting_Orders.csv", ";",escape_double = FALSE, locale = locale(decimal_mark = ",") , trim_ws = TRUE)
+# Para información sobre los argumentos buscar en ?read_delim
+
