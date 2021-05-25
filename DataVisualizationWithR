@@ -1,0 +1,20 @@
+# Data Visualization with R
+instal.packages("tidyverse")
+library(tidyverse)
+
+# If we need to know where a function or data set comes from:
+ggplot2::ggplot()
+ggplot(data = <DATA>) + <GEOM_FUNCTION>(mapping = aes(<MAPPINGS>))
+# The function geom_point() adds a layer of points to your plot. ggplot2 comes with many geom functions that each add a different type of layer to a plot
+# Each geom function in ggplot2 takes a mapping argument. This mapping argument is always paired with aes(), and the x and y arguments of aes() specify which variables to map to the x and y axes
+# Aesthetic is a visual property of the objects in your plot. Aesthetic include things like the size, shape, or the color of your points
+i.e. ggplot(data = mpg) + geom_point(mapping = aes(x = displ, y = hwy, color = class))
+# The alpha aesthetic control the transparency of the points
+# To set an aesthetic manually, set the aesthetic by name as an argument of your geom function. It goes outside of aes(). For example, the name of a color, the size of a point in mm, and the shape of a point as a numbre (from 0 to 24)
+i.e. ggplot(data=mpg) + geom_point(mapping = aes(x=displ, y=hwy), size = 2.5 , shape = 17, color = "blue")
+
+
+
+setwd("~/Documents/UNED/Módulo 2/")
+DataRetail = read_excel("Retail_Online.xlsx")
+head(DataRetail)
