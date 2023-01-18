@@ -1,1 +1,49 @@
+## Multiplication, division, modulo, and exponentiation
+print(3 * 5)
+print(10 / 2)
+print(18 % 7) # this operator returns the remainder of the division of the number to the left by the number on its right. For example 18 % 7 equals 4
+print(4 ** 2)
+
+## Variables and Types
+# Remember, = in Python means assignment, it doesn't test equality.
+# float: is Python's way of representing a real number. A number can have both an integer part and a fractional part.
+x = 1.79
+
+# int: short for integer
+y = 5
+
+# strings (str): is Python's way to represent text. You can use both double and single quotes to build a string,
+x = "body mass index"
+y = 'this works too'
+type(y)
+str
+
+# booleans (bool): is a type that can either be True or False.
+z = True
+type(z)
+bool
+
+# In Python, the plus operator behaved differently for different data types. General principle: how the code behaves depends on the types you're working with.
+2 + 3
+5
+
+'ab' + 'cd'
+'abcd'
+
+## Converting variables: In Python, we use str(), to convert a value into a string. str(savings), for example, will convert Python values into any type.
+## Similar functions such as int(), float(), and bool() will help you convert Python values into any type.
+# Definition of savings and result
+savings = 100
+result = 100 * 1.10 ** 7
+
+# Fix the printout
+print("I started with $" + str(savings) + " and now have $" + str(result) + ". Awesome!")
+
+# Definition of pi_string
+pi_string = "3.1415926"
+
+# Convert pi_string into float: pi_float
+pi_float = float(pi_string)
+
+## Python Lists
 
