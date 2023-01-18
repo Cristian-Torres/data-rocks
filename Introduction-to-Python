@@ -9,7 +9,7 @@ print(4 ** 2)
 # float: is Python's way of representing a real number. A number can have both an integer part and a fractional part.
 x = 1.79
 
-# int: short for integer
+# int: short for integer, representing integer numbers.
 y = 5
 
 # strings (str): is Python's way to represent text. You can use both double and single quotes to build a string,
@@ -21,6 +21,9 @@ str
 # booleans (bool): is a type that can either be True or False.
 z = True
 type(z)
+bool
+
+print(type(z))
 bool
 
 # In Python, the plus operator behaved differently for different data types. General principle: how the code behaves depends on the types you're working with.
@@ -46,4 +49,38 @@ pi_string = "3.1415926"
 pi_float = float(pi_string)
 
 ## Python Lists
+# A list is a way to give a single name to a collection of values. These values, or elements, can have any type. They can be floats, integer, string, booleans, even lists.
+fam = [1.73, 1.68, 1.71, 1.89]
+fam
+
+fam = ["liz", 1.73, "emma", 1.68, "mom", 1.71, "dad", 1.89]
+fam
+
+fam2 = [["liz", 1.73],
+        ["emma", 1.68],
+        ["mom", 1.71],
+        ["dad", 1.89]]
+        
+# area variables (in square meters)
+hall = 11.25
+kit = 18.0
+liv = 20.0
+bed = 10.75
+bath = 9.50
+
+# Adapt list areas
+areas = ["halway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "bathroom", bath]
+
+# Print areas
+areas
+
+
+
+
+
+
+
+
+
+
 
