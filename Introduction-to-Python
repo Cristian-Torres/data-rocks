@@ -74,7 +74,66 @@ areas = ["halway", hall, "kitchen", kit, "living room", liv, "bedroom", bed, "ba
 # Print areas
 areas
 
+## Subsetting lists: Liz would be index 0, the second element (1.73) would be index 1, and so on.
+fam = ["liz", 1.73, "emma", 1.68, "mom", 1.71, "dad", 1.89]
+fam
 
+fam[3]
+1.68
+fam[6]
+dad
+
+## Negative indexes: you can also count backwards, using negative indexes.
+fam[-1]
+1.89
+
+## List slicing: allows you to select multiple elements from a list, thus creating a new list. You cand do this by specifying a range, using a colon. Remember: [start(inclusive):end(exclusive)] 
+fam = ["liz", 1.73, "emma", 1.68, "mom", 1.71, "dad", 1.89]
+fam[3:5]
+[1.68, 'mom']
+
+fam[1:4]
+[1.73, "emma", 1.68]
+
+fam[:4]
+["liz", 1.73, "emma", 1.68]
+
+fam[5:]
+[1.71, "dad", 1.89]
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Sum of kitchen and bedroom area: eat_sleep_area
+eat_sleep_area = areas[3] + areas[7]
+
+# Print the variable eat_sleep_area
+print(eat_sleep_area)
+
+# Create the areas list
+areas = ["hallway", 11.25, "kitchen", 18.0, "living room", 20.0, "bedroom", 10.75, "bathroom", 9.50]
+
+# Use slicing to create downstairs
+downstairs = areas[:6]
+
+# Use slicing to create upstairs
+upstairs = areas[6:]
+
+# Print out downstairs and upstairs
+print(downstairs)
+print(upstairs)
+
+## Subsetting lists of lists
+## You saw before that a Python list can contain practically anything; even other lists! To subset lists of lists, you can use the same technique as before: square brackets. Try out the commands in the following code sample in the IPython Shell:
+
+x = [["a", "b", "c"],
+     ["d", "e", "f"],
+     ["g", "h", "i"]]
+x[2][0]
+x[2][:2]
+x[2] results in a list, that you can subset again by adding additional square brackets.
+
+## What will house[-1][1] return? house, the list of lists that you created before, is already defined for you in the workspace. You can experiment with it in the IPython Shell.
 
 
 
